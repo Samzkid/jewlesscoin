@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #0d0d0d;
   color: #fff;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,10 +26,11 @@ body {
 }
 
 .title {
+  font-family: 'Luckiest Guy', cursive;
   font-size: 3rem;
   margin: 10px 0;
   color: #facc15;
-  text-shadow: 2px 2px 10px #facc1533;
+  text-shadow: 2px 2px 10px #facc1533;  
 }
 
 .tagline {
