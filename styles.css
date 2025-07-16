@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 body {
   margin: 0;
   padding: 0;
   background: #0d0d0d;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Chewy', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,6 @@ body {
 }
 
 .title {
-  font-family: 'Luckiest Guy', cursive;
   font-size: 3rem;
   margin: 10px 0;
   color: #facc15;
