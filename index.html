@@ -23,7 +23,12 @@
     
     <p class="footer">Just a bunch of non-jews helping non-jews get richer</p>
     
-  
+  <div class="contract-copy">
+  <input type="text" id="contractAddress" value="5D1b8NwBDXFpKCdufKXvfNmgs2cMj7jV5Np9MG49bonk" readonly />
+  <button onclick="copyCA()" class="btn btn-copy">Copy CA</button>
+  <span id="copyMsg" class="copy-msg">Copied!</span>
+</div>
+
     <div class="buttons">
       <a href="https://jup.ag/swap/SOL-5D1b8NwBDXFpKCdufKXvfNmgs2cMj7jV5Np9MG49bonk" target="_blank" class="btn">Buy Now</a>
       <a href="https://birdeye.so/token/5D1b8NwBDXFpKCdufKXvfNmgs2cMj7jV5Np9MG49bonk?chain=solana" target="_blank" class="btn btn-secondary">View Chart</a>
@@ -37,5 +42,22 @@
     </div>
 
   </div> <!-- end of .container -->
+  
+<script>
+  function copyCA() {
+    const caInput = document.getElementById("contractAddress");
+    const copyMsg = document.getElementById("copyMsg");
+    caInput.select();
+    caInput.setSelectionRange(0, 99999); // Mobile support
+    document.execCommand("copy");
+
+    copyMsg.style.opacity = 1;
+    setTimeout(() => {
+      copyMsg.style.opacity = 0;
+    }, 1500);
+  }
+</script>
+
+  
 </body>
 </html>
