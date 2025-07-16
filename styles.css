@@ -128,3 +128,46 @@ body {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+.contract-copy {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#contractAddress {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #222;
+  color: #facc15;
+  font-weight: bold;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.btn-copy {
+  background: #facc15;
+  color: #000;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-copy:hover {
+  background: #eab308;
+}
+
+.copy-msg {
+  color: #22c55e;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
